@@ -14,12 +14,32 @@
   --background-heading-button: var(--background-heading-button) hsl(0, 0%, 95%);
 
   --font-size: 15px;
+  --padding: 3rem;
+}
+
+body {
+  font-size: var(--font-size);
+}
+
+/* MAIN CONTENT */
+
+.content {
+  padding: var(--padding);
+  color: var(--paragraph);
+}
+
+#sedans {
+  background: var(--bright-orange);
+}
+
+#suvs {
+  background: var(--dark-blue);
+}
+
+#luxury {
+  background: var(--deep-dark-blue);
 }
 
 img.vehicle-images {
   display: block;
 }
-
-/* #sedans {
-  background: url("images/icon-sedans.svg") no-repeat;
-} */
