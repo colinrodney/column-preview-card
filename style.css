@@ -15,3 +15,11 @@
 
   --font-size: 15px;
 }
+
+img.vehicle-images {
+  display: block;
+}
+
+/* #sedans {
+  background: url("images/icon-sedans.svg") no-repeat;
+} */
