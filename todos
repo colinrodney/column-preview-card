@@ -14,6 +14,10 @@ todos:
 [done]
 
 > Begin work on desktop layout
+  - Remove gutter from rows
+  - Add min-height @ .section-tile elements so they fill their parent containers
+
+  - address breakpoint issues
 
 
 Commits:

@@ -24,7 +24,7 @@
   background: var(--background-heading-button);
   border-radius: 50px;
   padding: 10px;
-  width: 60%;
+  /* width: 60%; */
 }
 
 body {
@@ -37,6 +37,7 @@ body {
 .section-tile {
   padding: var(--container-padding);
   color: var(--paragraph);
+  min-height: 100%;
 }
 
 .section-content {
