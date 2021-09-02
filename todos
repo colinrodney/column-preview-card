@@ -13,6 +13,8 @@ todos:
 > add google fonts + apply styles as appropriate
 [done]
 
+> add active states/ hover states + necessary styling to buttons. 
+
 > Begin work on desktop layout
   - Remove gutter from rows
   - Add min-height @ .section-tile elements so they fill their parent containers
