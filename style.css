@@ -27,6 +27,13 @@
   /* width: 60%; */
 }
 
+.btn:hover {
+  cursor: pointer;
+  background: inherit;
+  color: var(--paragraph);
+  border-color: var(--paragraph);
+}
+
 body {
   font-size: var(--font-size);
   line-height: 2;
@@ -59,13 +66,6 @@ p {
 #sedans .btn {
   color: var(--bright-orange);
 }
-#sedans .btn:hover {
-  /* this is the styling for all active states! */
-  cursor: pointer;
-  background: inherit;
-  color: var(--paragraph);
-  border-color: var(--paragraph);
-}
 
 #suvs {
   background: var(--dark-blue);
@@ -89,13 +89,6 @@ p {
   color: var();
   border-color: var();
 } */
-
-.btn:hover {
-  cursor: pointer;
-  /* background: none;
-  color: var(--paragraph); */
-  /* border-color: var(--paragrah); */
-}
 
 img.vehicle-images {
   display: block;
