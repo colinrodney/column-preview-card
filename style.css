@@ -9,12 +9,14 @@
   --dark-blue: hsl(184, 100%, 22%);
   --deep-dark-blue: hsl(179, 100%, 13%);
 
+  --font-size: 15px;
   --paragraph: hsla(0, 0%, 100%, 0.75);
+  --paragraph-font: "Lexend Deca", sans-serif;
+  --header-font: "Big Shoulders Display", cursive;
 
   --background-heading-button: hsl(0, 0%, 95%);
 
-  --font-size: 15px;
-  --padding: 3rem;
+  --container-padding: 4rem;
 }
 
 .btn {
@@ -27,13 +29,27 @@
 
 body {
   font-size: var(--font-size);
+  line-height: 2;
 }
 
 /* MAIN CONTENT */
 
-.content {
-  padding: var(--padding);
+.section-tile {
+  padding: var(--container-padding);
   color: var(--paragraph);
+}
+
+.section-content {
+  margin: 0 0 2rem 0; /*top right bottom left*/
+}
+h1 {
+  font-family: var(--header-font);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: var(--paragraph-font);
 }
 
 #sedans {
