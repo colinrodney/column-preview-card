@@ -13,16 +13,23 @@ todos:
 > add google fonts + apply styles as appropriate
 [done]
 
-> add active states/ hover states + necessary styling to buttons. 
+> add active states/ hover states + necessary styling to buttons. [done]
 
 > Begin work on desktop layout
   - Remove gutter from rows
   - Add min-height @ .section-tile elements so they fill their parent containers
-
   - address breakpoint issues
+  [done]
 
 
 Commits:
   > "Add <a> elements w/ role button + add appropriate styling"
+
+3 Sept 2021
+
+todos:
+  > Add border radius to main content container per design pkg.
+
+  > Figure out whether we need padding or margin to create space between main content area and viewport width.
 
 
