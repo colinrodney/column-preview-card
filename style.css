@@ -24,7 +24,6 @@
   background: var(--background-heading-button);
   border-radius: 50px;
   padding: 10px;
-  /* width: 60%; */
 }
 
 .btn:hover {
@@ -32,6 +31,16 @@
   background: inherit;
   color: var(--paragraph);
   border-color: var(--paragraph);
+}
+
+.sedan-btn {
+  color: var(--bright-orange);
+}
+.suvs-btn {
+  color: var(--dark-blue);
+}
+.luxury-btn {
+  color: var(--deep-dark-blue);
 }
 
 body {
@@ -63,32 +72,14 @@ p {
 #sedans {
   background: var(--bright-orange);
 }
-#sedans .btn {
-  color: var(--bright-orange);
-}
 
 #suvs {
   background: var(--dark-blue);
 }
-#suvs .btn {
-  color: var(--dark-blue);
-}
-/* #suvs .btn:hover {
-  color: var(--paragraph);
-  border-color: var(--paragraph);
-} */
 
 #luxury {
   background: var(--deep-dark-blue);
 }
-#luxury .btn {
-  color: var(--deep-dark-blue);
-}
-
-/* #luxury .btn:hover {
-  color: var();
-  border-color: var();
-} */
 
 img.vehicle-images {
   display: block;
