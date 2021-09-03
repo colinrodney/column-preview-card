@@ -16,7 +16,12 @@
 
   --background-heading-button: hsl(0, 0%, 95%);
 
-  --container-padding: 3rem;
+  --section-padding: 2rem;
+  --container-margin: 3rem auto;
+}
+
+#main {
+  margin: var(--container-margin);
 }
 
 .btn {
@@ -51,7 +56,7 @@ body {
 /* MAIN CONTENT */
 
 .section-tile {
-  padding: var(--container-padding);
+  padding: var(--section-padding);
   color: var(--paragraph);
   min-height: 100%;
 }
