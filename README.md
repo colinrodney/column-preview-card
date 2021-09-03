@@ -39,12 +39,20 @@ Feel free to use any workflow that you feel comfortable with. Below is a suggest
 
 1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
 2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
 
-## Deploying your project
+### The Game Plan
+
+Since I haven't had much (really any) experience w/ Figma or any other wireframing tools, I begin my design plan by creating a "hand-drawn" copy of the wireframe and its included elements. This allows me to better visualize how the elements will be placed on the page and takes out alot of the guesswork as it relates to the layout of that section or page and also helps you to think about how CSS classes will be used to create reusable styles as well as how id's will be used to style elements independently.
+
+As a general rule of thumb (for me at least), its ALWAYS as good idea to start by creating the HTML markup. This first step is critical in creating logically structured content.
+
+Now onward to the CSS. We will begin by developing the base/ global styles for the project such as `font-family` and `font-size`. I find that creating a design system and implementing it using CSS variables gets me alot closer to a finished product as opposed to adding the same properties and values to multiple elements. Design systems and CSS variables allow for fast and easy changes to multiple elements and works wonders to "DRY" up your code.
+
+Now that the design system is in place I begin working from left-to-right and top-to-bottom.
+Every project is different and will not be approached in the same fashion. Some projects have more complex layout requirements than others. I like to start working on the item that I think might take the most time to design. I do this because I have found truth to the old addage "90% of your time will be spent on 10% of a project" (Paraphrasing).
+I Start by adding styles to the top of the page and working downward. I move on to the next section once I'm comfortable with the area I've been working on.
+
+## Deploying your project (START HERE!!!)
 
 As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
 
