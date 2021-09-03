@@ -4,6 +4,7 @@
   padding: 0;
 }
 
+/* GLOBAL STYLES */
 :root {
   --bright-orange: hsl(31, 77%, 52%);
   --dark-blue: hsl(184, 100%, 22%);
@@ -20,10 +21,6 @@
   --container-margin: 3rem auto;
 }
 
-#main {
-  margin: var(--container-margin);
-}
-
 .btn {
   display: block;
   background: var(--background-heading-button);
@@ -37,8 +34,14 @@
   color: var(--paragraph);
   border-color: var(--paragraph);
 }
+/* END: GLOBAL STYLES */
 
-.sedan-btn {
+body {
+  font-size: var(--font-size);
+  line-height: 2;
+}
+
+/* .sedan-btn {
   color: var(--bright-orange);
 }
 .suvs-btn {
@@ -46,14 +49,12 @@
 }
 .luxury-btn {
   color: var(--deep-dark-blue);
-}
-
-body {
-  font-size: var(--font-size);
-  line-height: 2;
-}
+} */
 
 /* MAIN CONTENT */
+#main {
+  margin: var(--container-margin);
+}
 
 .section-tile {
   padding: var(--section-padding);
@@ -61,9 +62,22 @@ body {
   min-height: 100%;
 }
 
+#sedans.border-radius {
+  border-radius: 15px 15px 0 0;
+}
+
+#luxury.border-radius {
+  border-radius: 0 0 15px 15px;
+}
+
 .section-content {
   margin: 0 0 2rem 0; /*top right bottom left*/
 }
+
+img.vehicle-images {
+  display: block;
+}
+
 h1 {
   font-family: var(--header-font);
   font-weight: 700;
@@ -77,15 +91,32 @@ p {
 #sedans {
   background: var(--bright-orange);
 }
+.sedan-btn {
+  color: var(--bright-orange);
+}
 
 #suvs {
   background: var(--dark-blue);
+}
+.suvs-btn {
+  color: var(--dark-blue);
 }
 
 #luxury {
   background: var(--deep-dark-blue);
 }
+.luxury-btn {
+  color: var(--deep-dark-blue);
+}
 
-img.vehicle-images {
-  display: block;
+/* Add border radius to top/bottom @ left and right sides */
+@media (min-width: 768px) {
+  #sedans.border-radius {
+    /* border-radius top-left + bottom left */
+    border-radius: 10px 0 0 10px;
+  }
+  /* border-radius top-right + bottom right */
+  #luxury.border-radius {
+    border-radius: 0 10px 10px 0;
+  }
 }
