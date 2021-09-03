@@ -28,8 +28,9 @@ Commits:
 3 Sept 2021
 
 todos:
-  > Add border radius to main content container per design pkg.
+  > Add border radius to main content container per design pkg. [done]
 
-  > Figure out whether we need padding or margin to create space between main content area and viewport width.
+  > Figure out whether we need padding or margin to create space between main content area and viewport width. [done]
 
+  > Add attibution info + style @ footer
 
