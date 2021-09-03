@@ -109,6 +109,18 @@ p {
   color: var(--deep-dark-blue);
 }
 
+/* FOOTER */
+.attribution {
+  font-size: var(--font-size);
+  text-align: center;
+  padding: 1rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  color: var(--deep-dark-blue);
+}
+
 /* Add border radius to top/bottom @ left and right sides */
 @media (min-width: 768px) {
   #sedans.border-radius {
