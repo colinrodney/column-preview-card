@@ -4,19 +4,17 @@
 
 ## Welcome! 👋
 
-Thanks for checking out this front-end coding challenge.
-
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 **To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
 
 ## The challenge
 
-Your challenge is to build out this 3-column preview card component and get it looking as close to the design as possible.
+The challenge was for me to build out this 3-column preview card component and get it looking as close to the design as possible.
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+There were no constraints on which tools could be used to complete the challenge so I used Bootstrap v5.0 alongside a custom CSS style sheet for custom styling.
 
-Your users should be able to:
+Users of this project should be able to:
 
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
@@ -25,15 +23,15 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 ## Where to find everything
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design.
+Our task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design.
 
 The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`.
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+We will be completing the free version of this challenge but frontend mentor does offer a paid version whereas if you want all of the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can get access to those files by [subscribing as a PRO member](https://www.frontendmentor.io/pro).
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+All required assets can be found in the `/images` folder and the assets are already optimized.
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+A `style-guide.md` file containing the information you'll need, such as color palette and fonts is also included.
 
 ## Building your project
 
@@ -74,7 +72,7 @@ Remember, if you're looking for feedback on your solution, be sure to ask questi
 
 There are multiple places you can share your solution:
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
+1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack).
 2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
 3. Share your solution on other social channels like LinkedIn.
 4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
