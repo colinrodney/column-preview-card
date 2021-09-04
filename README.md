@@ -52,47 +52,48 @@ Now that the design system is in place I begin working from left-to-right and to
 Every project is different and will not be approached in the same fashion. Some projects have more complex layout requirements than others. I like to start working on the item that I think might take the most time to design. I do this because I have found truth to the old addage "90% of your time will be spent on 10% of a project" (Paraphrasing).
 I Start by adding styles to the top of the page and working downward. I move on to the next section once I'm comfortable with the area I've been working on.
 
-## Deploying your project (START HERE!!!)
+## Deploying the project
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+As mentioned above, there are many ways to host your project for free. I used github pages to deploy this project and it can be viewed at
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+- [GitHub Pages](https://pages.github.com/) <-- Add link to live site here?
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+## What Did I Learn?
 
-## Create a custom `README.md`
+As with every project there is almost always something new to learn.
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+### What to do with the SVG?
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+I used an <img> tag to link to the external file containing the SVG as it proved to be a simpler solution. Setting the SVG as a background image via CSS would have required me to margin-top or to the paragraph content to prevent it from sitting atop the background image. Whereas linking to the external SVG file using the <img> tag, I was able to set `display: block` which forced the <p> element to the next line and prevented the text content from stting on top of the image.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+### Bootstrap & .gitignore
 
-## Submitting your solution
+Bootstrap is the only frontend library with which I've had experience and it is an invaluable tool for being able to design layouts faster as opposed to using standalone CSS. This project was built using Bootstrap 5.0.2 locally w/ the project (no CDN) along with a custom CSS stylesheet to allow me to have greater control of styling the elements as needed. I'm also using a `.gitignore` file to ignore certain elements of the project that don't need to be made public. If you include Bootstrap locally in your project and add the Bootstrap directory to `.gitignore` the all of the Bootstrap files and stylings will be ignored.
+When I first made the project live I saw that my styling was not the same as it was on my development server. My development environment had all of the correct breakpoints/ containers etc... whereas the live deployment did not. The reason for this is because I added the directory in which the Bootstrap files are located to the `.gitignore` file.
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+You can resolve the issue of the missing Bootstrap styles at live deployment by removing the Bootstrap directory from the `.gitignore` file and committing the changes. Live deployment should now contain Bootstrap styles alongside styles from your custom CSS stylesheet if you have one.
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+### Bootstrap and Column Classes
 
-## Sharing your solution
+To prevent columns from breaking/wrapping in unexpected fashion use class .col{breakpoint}_ to create a simple grid system that starts off vertically stacked then goes horizontally unstacked at the specified breakpoint.
+**NOTE: Remember the number of columns on a row should total 12!** For example, since this is a 3-column preview card the columns will unstack horizontally and each card column will have a class "col-md-4". The total number of columns in a view port is 12 therfore: 3 sections with each section taking up 4 of the available 12 columns.
+Think: 3 sections _ 4 columns = 12 total columns.
 
-There are multiple places you can share your solution:
+#Google Fonts
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack).
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+Google Fonts are a very cool way to add custom fonts to a project! When the `font-family` is selected on the site Google lists a set of instructions for using the selected fonts that involve adding some addiitonal <link> tags to the <head> section of the HTML document
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback.
+We need the api link and gstatic link ONCE to allow access to the entire google fonts library. (In other words, if you are using more than one `font-family` in a project, include the "https://fonts.googleapis.com" and "https://fonts.gstatic.com" links only once. )
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+    ### fonts.googleapis.com link (include only once)
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-## Got feedback for us?
+    ### fonts.gstatic.com link
+    (include only once)
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+    ### link containing the font-family
+    (include as needed to get selected font families)
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&display=swap" rel="stylesheet">
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+Links to other font families can be added w/o having to add the above mentioned links again.
