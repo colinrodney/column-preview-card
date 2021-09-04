@@ -64,7 +64,7 @@ As with every project there is almost always something new to learn.
 
 ### What to do with the SVG?
 
-I used an <img> tag to link to the external file containing the SVG as it proved to be a simpler solution. Setting the SVG as a background image via CSS would have required me to margin-top or to the paragraph content to prevent it from sitting atop the background image. Whereas linking to the external SVG file using the <img> tag, I was able to set `display: block` which forced the <p> element to the next line and prevented the text content from stting on top of the image.
+I used an <img> tag to link to the external file containing the SVG as it proved to be a simpler solution. Setting the SVG as a background image via CSS would have required me to margin-top or to the paragraph content to prevent it from sitting atop the background image. Whereas linking to the external SVG file using the <img> tag, I was able to set `display: block;` which forced the <p> element to the next line and prevented the text content from stting on top of the image.
 
 ### Bootstrap & .gitignore
 
@@ -79,20 +79,20 @@ To prevent columns from breaking/wrapping in unexpected fashion use class .col{b
 **NOTE: Remember the number of columns on a row should total 12!** For example, since this is a 3-column preview card the columns will unstack horizontally and each card column will have a class "col-md-4". The total number of columns in a view port is 12 therfore: 3 sections with each section taking up 4 of the available 12 columns.
 Think: 3 sections _ 4 columns = 12 total columns.
 
-#Google Fonts
+### Google Fonts
 
 Google Fonts are a very cool way to add custom fonts to a project! When the `font-family` is selected on the site Google lists a set of instructions for using the selected fonts that involve adding some addiitonal <link> tags to the <head> section of the HTML document
 
 We need the api link and gstatic link ONCE to allow access to the entire google fonts library. (In other words, if you are using more than one `font-family` in a project, include the "https://fonts.googleapis.com" and "https://fonts.gstatic.com" links only once. )
 
-    ### fonts.googleapis.com link (include only once)
+    fonts.googleapis.com link (include only once)
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    ### fonts.gstatic.com link
+    fonts.gstatic.com link
     (include only once)
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    ### link containing the font-family
+    link containing the font-family
     (include as needed to get selected font families)
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&display=swap" rel="stylesheet">
 
